@@ -1,0 +1,182 @@
+@charset "UTF-8"; 
+
+body{
+	margin:0 !important;
+	padding:0px;
+	height:990px;
+	/*width:1920px;*/
+}
+
+/* header{
+	text-align:center;
+	
+}
+ */
+
+.conA {
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    height: 1007px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url(../img/main1.jpg);
+    animation: slide_img_1 15s infinite;
+}
+
+.img2 {
+    background-image: url(../img/main2.jpg);
+    animation: slide_img_2 15s infinite;
+}
+
+.img3 {
+    background-image: url(../img/main3.jpg);
+    animation: slide_img_3 15s infinite;
+}
+
+@keyframes slide_img_1 {
+    0% {
+        opacity: 1;
+    }
+
+    12% {
+        opacity: 1;
+    }
+
+    23% {
+        opacity: 1;
+    }
+
+    34% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    56% {
+        opacity: 0;
+    }
+
+    67% {
+        opacity: 0;
+    }
+
+    78% {
+        opacity: 0;
+    }
+
+    89% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_img_2 {
+    0% {
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 0;
+    }
+
+    23% {
+        opacity: 0;
+    }
+
+    34% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 1;
+    }
+
+    56% {
+        opacity: 1;
+    }
+
+    67% {
+        opacity: 0;
+    }
+
+    78% {
+        opacity: 0;
+    }
+
+    89% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide_img_3 {
+    0% {
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 0;
+    }
+
+    23% {
+        opacity: 0;
+    }
+
+    34% {
+        opacity: 0;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    56% {
+        opacity: 0;
+    }
+
+    67% {
+        opacity: 1;
+    }
+
+    78% {
+        opacity: 1;
+    }
+
+    89% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+#footer{
+	background-color: white;
+    color: black;
+    height: 141px;
+    /* position: absolute;
+    position: fixed; */
+    width: 100%;
+    bottom: 0;
+    left:0;
+	
+	
+}
+

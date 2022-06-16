@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>회원가입 페이지</title>
+<script>
+function check(){
+
+	var fm1 = document.frm2;
+	
+	if(fm1.ID.value==""){
+	alert("아이디를 입력하세요");
+	fm1.ID.focus();
+	return;
+}else if (fm1.PW.value==""){
+	alert("비밀번호를 입력하세요");
+	fm1.PW.focus();
+	return;
+}else if (fm1.PWcheck.value==""){
+	alert("비밀번호를 확인을 입력하세요");
+	fm1.PWcheck.focus();
+	return;
+}else if (fm1.PW.value != fm1.PWcheck.value){
+	alert("비밀번호가 일치하지 않습니다");
+	fm1.PWcheck.value="";
+	fm1.PWcheck.focus();
+	return;
+}else if (fm1.NAME.value==""){
+	alert("이름을 입력하세요");
+	fm1.NAME.focus();
+	return;
+}else if (fm1.EMAIL.value==""){
+	alert("이메일을 입력하세요");
+	fm1.EMAIL.focus();
+	return;	
+	}
+	
+	
+	alert("전송합니다");
+	fm1.action = "memberJoinOk2.jsp"
+	fm1.method = "post";
+	fm1.submit();
+	return;
+	
+	}
+	
+
+
+</script>
+</head>
+<body>
+
+<form name="frm2">
+
+<table width="400px">
+ <tr bgcolor="lightgrey" height="50px">
+ <th colspan="2" align=center> 회원 가입 페이지 </th>
+ </tr>
+<tr bgcolor="whitesmoke" height="35px" align=left>
+	<td>아이디</td>
+	<td><input type="text" name="ID" maxlength="10"></td>
+</tr>
+<tr bgcolor="whitesmoke" height="35px" align=left>
+	<td>비밀번호</td>
+	<td><input type="password" name="PW" maxlength="8"></td>
+</tr>
+<tr bgcolor="whitesmoke" height="35px" align=left>
+	<td>비밀번호 확인</td>
+	<td><input type="password" name="PWcheck" maxlength="8"></td>
+</tr>
+<tr bgcolor="whitesmoke" height="35px" align=left>
+	<td>이름</td>
+	<td><input type="text" name="NAME" ></td>
+</tr>
+<tr bgcolor="whitesmoke" height="35px" align=left>
+	<td>이메일</td>
+	<td><input type="text" name="EMAIL" ></td>
+</tr>
+<tr>
+	<td bgcolor="whitesmoke" height="35px" align=left>생년월일</td>
+	<td><input type="date"></td>
+</tr>
+<tr>
+	<td bgcolor="whitesmoke" height="35px" align=left>성별</td>
+	<td><input type="radio" name="gender" value="남성">남성
+		<input type="radio" name="gender" value="여성">여성</td>
+</tr> 
+<tr>
+	<td bgcolor="whitesmoke" height="35px" align=left>취미</td>
+	<td> <input type="checkbox"> 축구 <input type="checkbox"> 농구 <input type="checkbox"> 야구
+</tr>
+</table>
+<table style="text-align:center; width:400px">
+<tr>
+<td>
+<input type="button" value="확인" onclick="check();">
+<input type="reset" value="다시작성"> </td>
+
+</tr>
+</table>
+</form>
+</body>
+</html>
+
